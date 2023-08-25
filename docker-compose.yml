@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: ./Dockerfile
     environment:
-      REACT_APP_AUTHORITY: https://login.microsoftonline.com/a4dcbba0-6b85-40a8-ac2c-811e2aff0c69
-      REACT_APP_CLIENT_ID: 7f34d1f7-07df-4b91-a4e4-4687d1021caf
+      REACT_APP_AUTHORITY: ${REACT_APP_AUTHORITY}
+      REACT_APP_CLIENT_ID: ${REACT_APP_CLIENT_ID}
     ports:
       - "3000:3000"
